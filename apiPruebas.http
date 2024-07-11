@@ -1,0 +1,39 @@
+### pagina principal
+http://localhost:3000
+
+
+### 1- Mostrar todas los productos
+GET http://localhost:3000/productos/all
+
+
+### 2- Mostrar un producto segun el codigo
+GET http://localhost:3000/productos/1234
+
+
+### 3- Mostrar el/los producto/s que coincide/n con el nombre especificado
+GET http://localhost:3000/productos/nombre/caf
+
+
+### 4- Crear/Agregar un producto a la BD
+POST http://localhost:3000/productos/
+content-type: application/json
+
+{
+    "codigo": 5513,
+    "nombre": "Fideo",
+    "precio": 1.29,
+    "categoria": "Comestible"
+}
+
+
+### 5- Modificar/Actualizar el precio de un producto por su código
+PATCH http://localhost:3000/productos/5512/
+content-type: application/json
+
+{
+    "precio": 2.11
+}
+
+
+### 6- Borrar una producto por su id
+DELETE http://localhost:3000/productos/111111

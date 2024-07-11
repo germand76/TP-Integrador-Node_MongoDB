@@ -1,0 +1,16 @@
+{
+  "name": "tp-integrador-node_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3",
+    "morgan": "^1.10.0"
+  }
+}
